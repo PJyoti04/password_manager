@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <div className="flex items-center bg-green-200 px-2 rounded-md cursor-pointer hover:bg-green-300 gap-2">
           <img className="w-6" src="./github-inverted.svg" alt="github" />
-          <span className="font-bold text-xs py-2">GitHub</span>
+          <a target="_blank" href="https://github.com/PJyoti04" className="font-bold text-xs py-2">GitHub</a>
         </div>
       </div>
     </nav>

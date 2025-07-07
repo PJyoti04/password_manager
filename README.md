@@ -1,8 +1,42 @@
-# React + Vite
+# passhh
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A secure **MERN stack password manager** that allows users to store, manage, and copy passwords for their websites, ensuring privacy and ease of access.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add, view, and delete passwords for various websites.
+- Passwords are **hashed using bcrypt** before storage for privacy.
+- Copy passwords easily for use when needed.
+- Responsive and clean UI for easy management.
+- Fully RESTful API structure.
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Context API, Tailwind CSS (or your styling choice)
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Password Hashing:** bcrypt
+
+## 📸 Screenshots
+
+### UI
+
+![UI](/ss.png)
+
+
+## ✨ Installation
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+
+### Backend
+
+```bash
+cd server
+npm install
+npm run dev
+
+
