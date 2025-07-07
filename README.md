@@ -21,7 +21,7 @@ A secure **MERN stack password manager** that allows users to store, manage, and
 
 ### UI
 
-![UI](/ss.png)
+![UI](public/ss.png)
 
 
 ## ✨ Installation
@@ -31,6 +31,7 @@ A secure **MERN stack password manager** that allows users to store, manage, and
 ```bash
 npm install
 npm run dev
+```
 
 ### Backend
 
