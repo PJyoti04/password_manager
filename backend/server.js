@@ -5,18 +5,21 @@ const { MongoClient } = require("mongodb");
 const bodyparser = require("body-parser");
 const cors = require('cors')
 
-// console.log(process.env.MONGO_URI); // remove this after you've confirmed it is working
 const port = 3000;
 app.use(bodyparser.json());
 app.use(cors())
 
-const url = "mongodb://localhost:27017";
-const client = new MongoClient(url);
+// const url = "mongodb://localhost:27017";
+const client = new MongoClient(process.env.MONGO_URI);
 
 // Database Name
 const dbName = "passhh";
 
-client.connect();
+try {
+  client.connect();
+} catch (error) {
+  console.log(error)
+}
 
 //Get All passwords
 app.get("/", async (req, res) => {
