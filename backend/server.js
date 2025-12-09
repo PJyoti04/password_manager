@@ -5,9 +5,20 @@ const { MongoClient } = require("mongodb");
 const bodyparser = require("body-parser");
 const cors = require('cors')
 
-const port = 3000;
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://gleeful-unicorn-c80f79.netlify.app/"
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
+
+const port = process.env.PORT || 3000;
 app.use(bodyparser.json());
-app.use(cors())
+// app.use(cors())
 
 // const url = "mongodb://localhost:27017";
 const client = new MongoClient(process.env.MONGO_URI);
