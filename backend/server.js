@@ -7,7 +7,7 @@ const cors = require('cors')
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://gleeful-unicorn-c80f79.netlify.app/"
+  "https://gleeful-unicorn-c80f79.netlify.app"
 ];
 
 app.use(cors({
